@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import PlayerSetup from "@/components/assignment-1/PlayerSetup";
 
 export default function PlayerSetupPage() {
-  return <div>PLAYER SETUP</div>;
+  return <PlayerSetup />;
 }
