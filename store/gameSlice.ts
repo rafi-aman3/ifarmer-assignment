@@ -135,10 +135,21 @@ export const gameSlice = createSlice({
         player2: state.player2,
       };
     },
+    newGame: (state) => {
+      return {
+        ...initialState,
+      };
+    },
   },
 });
 
-export const { setPlayers, makeMove, nextRound, resetBoard, resetGame } =
-  gameSlice.actions;
+export const {
+  setPlayers,
+  makeMove,
+  nextRound,
+  resetBoard,
+  resetGame,
+  newGame,
+} = gameSlice.actions;
 
 export default gameSlice.reducer;
