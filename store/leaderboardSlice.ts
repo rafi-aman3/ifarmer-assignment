@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
-interface PlayerStats {
+export interface PlayerStats {
   name: string;
   totalScore: number;
   gamesPlayed: number;

@@ -67,6 +67,7 @@ export const ResultScreen = () => {
 
   const isEarlyWin = round < 5;
   const isDraw = !matchWinner;
+
   return (
     <div className="container mx-auto px-4 py-4 md:py-8">
       <div className="max-w-2xl mx-auto space-y-4 md:space-y-6">

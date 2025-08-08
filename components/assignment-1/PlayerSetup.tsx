@@ -1,4 +1,3 @@
-import React from "react";
 import PlayerSetupFormContainer from "./PlayerSetupFormContainer";
 
 const PlayerSetup = () => {
