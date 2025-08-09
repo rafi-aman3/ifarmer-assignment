@@ -19,7 +19,7 @@ const CategoryList = ({
         <CardContent className="space-y-2">
           <Button
             variant={categoryId === null ? "default" : "ghost"}
-            className="w-full justify-start"
+            className="w-full justify-start break-all"
             onClick={() => handleCategoryFilter(null)}
           >
             All Categories
@@ -33,7 +33,7 @@ const CategoryList = ({
               <Button
                 key={category.id}
                 variant={categoryId === category.id ? "default" : "ghost"}
-                className="w-full justify-start"
+                className="w-full justify-start truncate wrap-break-word"
                 onClick={() => handleCategoryFilter(category.id)}
               >
                 {category.name}
