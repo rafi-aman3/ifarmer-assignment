@@ -82,7 +82,7 @@ export default function ProductDetailsPage() {
           <div className="lg:col-span-2">
             <Card>
               <CardHeader>
-                <div className="flex justify-between items-start">
+                <div className="flex w-full md:w-auto justify-between items-start">
                   <div>
                     <CardTitle className="text-2xl mb-2">
                       {productData.title}
@@ -110,7 +110,7 @@ export default function ProductDetailsPage() {
               <CardContent className="space-y-6">
                 {productData.images && productData.images.length > 0 && (
                   <div className="space-y-4">
-                    <div className="relative aspect-video bg-gray-100 rounded-lg overflow-hidden group">
+                    <div className="relative aspect-auto w-full md:w-[400px] h-auto bg-gray-100 rounded-lg overflow-hidden group">
                       <img
                         src={productData.images[currentImageIndex]}
                         alt={productData.title}

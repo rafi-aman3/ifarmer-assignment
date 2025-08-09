@@ -32,7 +32,7 @@ export const ProductDetailsHeader = ({
           <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
             Product Details
           </h1>
-          <p className="text-muted-foreground mt-1">View product information</p>
+          <p className="text-muted-foreground whitespace-nowrap md:whitespace-normal mt-1">View product information</p>
         </div>
         <div className="flex gap-2">
           <Link href={`/assignment-2/edit/${product?.id}`}>
