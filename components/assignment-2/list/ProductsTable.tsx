@@ -78,6 +78,7 @@ const ProductsTable = ({ products, handleDelete }: ProductGridProps) => {
                   </Button>
                   <ProductDeleteButton
                     product={product}
+                    showText={false}
                     handleDelete={handleDelete}
                   />
                 </div>
