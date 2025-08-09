@@ -13,24 +13,28 @@ import { Button } from "@/components/ui/button";
 import { Trash2 } from "lucide-react";
 import React from "react";
 import { Product } from "@/store/api/product";
+import { fa } from "zod/v4/locales";
 
 interface ProductDeleteButtonProps {
   product: Product;
   handleDelete: (id: number) => void;
+  showText: boolean;
 }
 
 export const ProductDeleteButton = ({
   product,
   handleDelete,
+  showText = false,
 }: ProductDeleteButtonProps) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
         <Button
-          variant="outline"
-          size="sm"
+          variant={"outline"}
+          size={"sm"}
           className="text-destructive hover:bg-destructive/10"
         >
+          {showText && "Delete"}
           <Trash2 className="h-4 w-4" />
         </Button>
       </AlertDialogTrigger>

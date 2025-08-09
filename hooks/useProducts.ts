@@ -6,6 +6,7 @@ import {
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
 import { loadLeaderboard } from "@/store/leaderboardSlice";
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 const limit = 10;
 
 interface useProductsProps {
@@ -27,7 +28,10 @@ export function useProducts({ page, categoryId, search }: useProductsProps) {
 
   const [deleteProduct] = useDeleteProductMutation();
 
-  const handleDelete = async (id: number) => await deleteProduct(id);
+  const handleDelete = async (id: number) => {
+    await deleteProduct(id);
+    toast.success("Product Deleted!")
+  };
 
   return { products, isFetching, isError, disableNextButton, handleDelete };
 }

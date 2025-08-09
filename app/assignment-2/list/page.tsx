@@ -12,6 +12,8 @@ import ProductsTable from "@/components/assignment-2/list/ProductsTable";
 import PaginationButtons from "@/components/assignment-2/list/PaginationButtons";
 import CategoryList from "@/components/assignment-2/list/CategoryList";
 import Header from "@/components/assignment-2/list/Header";
+import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 export default function ListPage() {
   const {
@@ -53,6 +55,7 @@ export default function ListPage() {
               handleSearch={handleSearch}
               search={search}
             />
+            
 
             <Card>
               <CardContent className="p-4 lg:p-6">
