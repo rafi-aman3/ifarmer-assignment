@@ -88,18 +88,3 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 - `/types` - TypeScript type definitions
 - `/utils` - Utility functions and form schemas
 
-## Learn More
-
-To learn more about the technologies used in this project:
-
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Shadcn UI](https://ui.shadcn.com/)
-- [React Hook Form](https://react-hook-form.com/)
-
-## Deployment
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
